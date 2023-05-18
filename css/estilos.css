@@ -1,0 +1,40 @@
+img.redes{width: 25px; height: 25px;}
+img.pequeña{width: 100px; height: 100px;}
+img.mediana{width: 298px; height: 169px;}
+body{background-color: #103f79;}
+header{display: flex;justify-content: space-between;padding: auto;align-items: center;background-color: #f3b229;color: #103f79;}
+header ul li{display: inline-block;margin: 3px;padding: 3px;}
+h3{color:whitesmoke;}
+form{color: #f3b229;display: flex;}
+footer{color: #f3b229;display: flex;justify-content: space-between;padding: 10px;align-items: center;}
+table{color: #f3b229;margin: auto;margin-top: 10px;text-align: center;}
+.contenedor{
+    height: 65vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+    grid-template-areas:
+    "header header"
+    "nota1 nota2";
+    gap: 10px;
+    text-align: center;
+}
+.nota1{background-color: whitesmoke; color: #103f79; grid-area: nota1;}
+.nota2{background-color: whitesmoke; color: #103f79; grid-area: nota2;}
+
+/*Estilo de Historia*/
+.contenedortexto{
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "texto img";
+    gap: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    margin-top: 10px;
+}
+.mediana{color: #103f79; grid-area: img;}
+.texto{color: #103f79; grid-area: texto;}
